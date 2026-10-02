@@ -9,7 +9,7 @@ from docx.shared import Pt, Inches
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from fpdf import FPDF
 
-API_URL = "http://localhost:8000/generate"
+API_URL = os.getenv("API_URL", "http://localhost:8000/generate")
 LOGO = os.path.join(os.path.dirname(__file__), "..", "Image", "Logo.png")
 
 
